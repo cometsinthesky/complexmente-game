@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ComplexMente
 
 ## Jogo de Decisões e Conexões entre Ciência, Tecnologia, Sociedade e Ambiente (CTSA)
@@ -14,7 +13,7 @@ do Programa de Pós-Graduação em Educação em Ciências
 (PPGEduc) da Universidade de Brasília (UnB).
 
 **Desenvolvimento:** Lucas Ferreira  
-**Instituição:** Universidade de Brasília — UnB  
+**Instituição:** Universidade de Brasília - UnB  
 **Ano:** 2026
 
 ---
@@ -116,7 +115,7 @@ a um projetor.
 
 O ComplexMente possui quatro fases.
 
-### Fase 1 — Despertar da Complexidade
+### Fase 1 - Despertar da Complexidade
 
 As equipes respondem perguntas fáceis e médias.
 
@@ -141,7 +140,7 @@ Mecânicas:
 - Bônus por velocidade.
 - Poderes especiais.
 
-### Fase 2 — Território das Incertezas
+### Fase 2 - Território das Incertezas
 
 As equipes enfrentam perguntas complexas.
 
@@ -169,7 +168,7 @@ As cartas podem:
 As equipes também podem participar
 de desafios cruzados.
 
-### Fase 3 — Dilemas CTSA
+### Fase 3 - Dilemas CTSA
 
 Cada equipe enfrenta um dilema.
 
@@ -202,7 +201,7 @@ uma simulação didática simplificada.
 
 Não são estimativas científicas de impacto.
 
-### Fase Final — Conselho do Futuro
+### Fase Final - Conselho do Futuro
 
 Cada equipe responde uma pergunta final.
 
@@ -361,17 +360,17 @@ a qualidade da argumentação oral.
 
 Durante as perguntas:
 
-1 — Selecionar alternativa A.
+1 - Selecionar alternativa A.
 
-2 — Selecionar alternativa B.
+2 - Selecionar alternativa B.
 
-3 — Selecionar alternativa C.
+3 - Selecionar alternativa C.
 
-4 — Selecionar alternativa D.
+4 - Selecionar alternativa D.
 
-Espaço — Pausar ou retomar o cronômetro.
+Espaço - Pausar ou retomar o cronômetro.
 
-N — Avançar para a próxima rodada,
+N - Avançar para a próxima rodada,
 após a conclusão da questão.
 
 Os botões na interface também podem
@@ -381,7 +380,7 @@ ser utilizados normalmente.
 
 ## 12. Dinâmica sugerida para o doutorado
 
-### Abertura — 5 minutos
+### Abertura - 5 minutos
 
 Apresentação da landing page.
 
@@ -391,14 +390,14 @@ Discussão breve:
 - O que significa tomar decisões sob incerteza?
 - Toda decisão científica é exclusivamente técnica?
 
-### Fase 1 — 8 minutos
+### Fase 1 - 8 minutos
 
 Perguntas conceituais.
 
 O professor pode solicitar justificativas
 antes de registrar as respostas.
 
-### Fase 2 — 12 minutos
+### Fase 2 - 12 minutos
 
 Questões avançadas e desafios cruzados.
 
@@ -409,21 +408,21 @@ A discussão pode explorar diferenças entre:
 - Ignorância.
 - Indeterminação.
 
-### Fase 3 — 12 minutos
+### Fase 3 - 12 minutos
 
 Dilemas CTSA.
 
 As equipes apresentam suas decisões
 e justificam os critérios adotados.
 
-### Fase Final — 8 minutos
+### Fase Final - 8 minutos
 
 Conselho do Futuro.
 
 Apostas, perguntas decisivas
 e apresentação do ranking.
 
-### Fechamento — 5 minutos
+### Fechamento - 5 minutos
 
 Discussão coletiva sobre os resultados.
 
@@ -572,16 +571,15 @@ a branch main e a pasta raiz.
 
 ## 18. Créditos
 
-ComplexMente — Jogo de Decisões e Conexões CTSA.
+ComplexMente - Jogo de Decisões e Conexões CTSA.
 
 Idealização e desenvolvimento:
 Lucas Ferreira.
 
 Programa de Pós-Graduação em Educação em Ciências.
-Universidade de Brasília — UnB.
+Universidade de Brasília - UnB.
 
 2026.
 =======
 # complexmente-game
 Jogo de decisões e conexões entre Ciência, Tecnologia, Sociedade e Ambiente (CTSA). Criado no âmbito do Programa de Pós Gradução em Educação em Ciências (PPGEduC/UnB).
->>>>>>> origin/main
