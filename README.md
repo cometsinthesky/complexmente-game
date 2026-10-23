@@ -573,13 +573,9 @@ a branch main e a pasta raiz.
 
 ComplexMente - Jogo de Decisões e Conexões CTSA.
 
-Idealização e desenvolvimento:
-Lucas Ferreira.
+Idealização e desenvolvimento: Lucas Ferreira (UnB/PPGEduC).
 
 Programa de Pós-Graduação em Educação em Ciências.
 Universidade de Brasília - UnB.
 
 2026.
-=======
-# complexmente-game
-Jogo de decisões e conexões entre Ciência, Tecnologia, Sociedade e Ambiente (CTSA). Criado no âmbito do Programa de Pós Gradução em Educação em Ciências (PPGEduC/UnB).
