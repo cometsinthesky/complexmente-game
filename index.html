@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080e1c">
+
+  <meta
+    name="description"
+    content="ComplexMente: jogo de decisões, riscos e conexões entre Ciência, Tecnologia, Sociedade e Ambiente."
+  >
+
+  <title>ComplexMente | Jogo de Decisões CTSA</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- FUNDO E EFEITOS -->
+
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="background-grid" aria-hidden="true"></div>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <!-- MENU SUPERIOR -->
+
+  <header class="topbar">
+
+    <a href="#" class="brand" id="logoLink">
+      <span class="brand-symbol">◈</span>
+
+      <span class="brand-name">
+        COMPLEX<span>MENTE</span>
+      </span>
+    </a>
+
+    <div class="topbar-right">
+
+      <span class="edition-label">
+        EDIÇÃO CTSA
+      </span>
+
+      <button
+        type="button"
+        id="soundToggle"
+        class="icon-button"
+        aria-label="Ativar ou desativar sons"
+      >
+        🔊
+      </button>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- ==================================
+         TELA 1: LANDING PAGE
+    =================================== -->
+
+    <section id="landing" class="view active">
+
+      <div class="hero">
+
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          UMA EXPERIÊNCIA INTERATIVA EM EDUCAÇÃO EM CIÊNCIAS
+        </div>
+
+        <h1 class="hero-title">
+
+          O FUTURO É
+
+          <span class="gradient-text">
+            COMPLEXO.
+          </span>
+
+          <span class="hero-small">
+            SUAS DECISÕES TAMBÉM.
+          </span>
+
+        </h1>
+
+        <p class="hero-description">
+
+          Em um mundo marcado por riscos, incertezas,
+          mudanças climáticas e transformações tecnológicas,
+          conhecer os fatos é apenas o começo.
+
+          <strong>
+            Você consegue tomar decisões quando não existem
+            respostas simples?
+          </strong>
+
+        </p>
+
+        <div class="hero-actions">
+
+          <button
+            type="button"
+            class="btn btn-primary btn-large"
+            id="goSetup"
+          >
+            INICIAR EXPERIÊNCIA
+            <span>→</span>
+          </button>
+
+          <a class="btn btn-secondary btn-large" href="#rules">
+            CONHECER AS REGRAS
+          </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+          <div class="hero-stat">
+            <strong>04</strong>
+            <span>FASES</span>
+          </div>
+
+          <div class="hero-stat">
+            <strong>2–4</strong>
+            <span>EQUIPES</span>
+          </div>
+
+          <div class="hero-stat">
+            <strong>CTSA</strong>
+            <span>CONEXÕES</span>
+          </div>
+
+          <div class="hero-stat">
+            <strong>∞</strong>
+            <span>POSSIBILIDADES</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- APRESENTAÇÃO DA PROPOSTA -->
+
+      <section class="content-section">
+
+        <div class="section-heading">
+
+          <span class="section-kicker">
+            SUA MISSÃO
+          </span>
+
+          <h2>
+            Não basta acertar.
+            <span class="gradient-text">
+              É preciso conectar.
+            </span>
+          </h2>
+
+          <p>
+
+            O ComplexMente transforma conceitos sobre
+            complexidade, incerteza e risco em desafios
+            colaborativos e competitivos.
+
+            As equipes precisarão interpretar evidências,
+            defender argumentos, reconhecer limitações do
+            conhecimento científico e avaliar consequências
+            sociais e ambientais.
+
+          </p>
+
+        </div>
+
+        <div class="principles-grid">
+
+          <div class="glass-card principle-card">
+            <div class="principle-icon">🔬</div>
+            <h3>CIÊNCIA</h3>
+            <p>
+              Evidências, modelos científicos,
+              limites do conhecimento e incerteza.
+            </p>
+          </div>
+
+          <div class="glass-card principle-card">
+            <div class="principle-icon">⚙️</div>
+            <h3>TECNOLOGIA</h3>
+            <p>
+              Inovação, benefícios, consequências
+              não previstas e novos riscos.
+            </p>
+          </div>
+
+          <div class="glass-card principle-card">
+            <div class="principle-icon">🌐</div>
+            <h3>SOCIEDADE</h3>
+            <p>
+              Cidadania, desigualdades,
+              participação e escolhas coletivas.
+            </p>
+          </div>
+
+          <div class="glass-card principle-card">
+            <div class="principle-icon">🌱</div>
+            <h3>AMBIENTE</h3>
+            <p>
+              Sustentabilidade, mudanças climáticas
+              e futuros possíveis.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- QUATRO FASES -->
+
+      <section class="content-section">
+
+        <div class="section-heading">
+
+          <span class="section-kicker">
+            A JORNADA
+          </span>
+
+          <h2>
+            Quatro fases.
+            <span class="gradient-text">
+              Um futuro em disputa.
+            </span>
+          </h2>
+
+          <p>
+            Cada etapa exige novas formas de pensar,
+            argumentar e trabalhar em equipe.
+          </p>
+
+        </div>
+
+        <div class="phases-grid">
+
+          <article class="phase-card phase-one">
+
+            <div class="phase-top">
+              <span class="phase-number">01</span>
+              <span class="phase-symbol">◈</span>
+            </div>
+
+            <span class="phase-type">
+              CONHECIMENTO
+            </span>
+
+            <h3>
+              DESPERTAR DA
+              COMPLEXIDADE
+            </h3>
+
+            <p>
+              Perguntas fáceis e médias para
+              reconhecer conceitos fundamentais
+              de CTSA, risco e incerteza.
+            </p>
+
+            <ul>
+              <li>Perguntas de múltipla escolha</li>
+              <li>Cronômetro</li>
+              <li>Pontuação e bônus</li>
+              <li>Poderes especiais</li>
+            </ul>
+
+          </article>
+
+          <article class="phase-card phase-two">
+
+            <div class="phase-top">
+              <span class="phase-number">02</span>
+              <span class="phase-symbol">⚡</span>
+            </div>
+
+            <span class="phase-type">
+              INCERTEZA
+            </span>
+
+            <h3>
+              TERRITÓRIO DAS
+              INCERTEZAS
+            </h3>
+
+            <p>
+              Questões complexas, situações
+              imprevistas e disputas argumentativas
+              entre as equipes.
+            </p>
+
+            <ul>
+              <li>Questões avançadas</li>
+              <li>Cartas de risco</li>
+              <li>Desafios cruzados</li>
+              <li>Decisões sob pressão</li>
+            </ul>
+
+          </article>
+
+          <article class="phase-card phase-three">
+
+            <div class="phase-top">
+              <span class="phase-number">03</span>
+              <span class="phase-symbol">🌍</span>
+            </div>
+
+            <span class="phase-type">
+              TOMADA DE DECISÃO
+            </span>
+
+            <h3>
+              DILEMAS
+              CTSA
+            </h3>
+
+            <p>
+              Enfrente problemas contemporâneos
+              que envolvem interesses conflitantes,
+              evidências e consequências.
+            </p>
+
+            <ul>
+              <li>Dilemas sociocientíficos</li>
+              <li>Decisões coletivas</li>
+              <li>Consequências simuladas</li>
+              <li>Argumentação fundamentada</li>
+            </ul>
+
+          </article>
+
+          <article class="phase-card phase-four">
+
+            <div class="phase-top">
+              <span class="phase-number">04</span>
+              <span class="phase-symbol">♛</span>
+            </div>
+
+            <span class="phase-type">
+              CONFRONTO FINAL
+            </span>
+
+            <h3>
+              CONSELHO
+              DO FUTURO
+            </h3>
+
+            <p>
+              As equipes enfrentam um último
+              desafio e apostam pontos para
+              conquistar a vitória.
+            </p>
+
+            <ul>
+              <li>Pergunta decisiva</li>
+              <li>Apostas estratégicas</li>
+              <li>Justificativa científica</li>
+              <li>Ranking final</li>
+            </ul>
+
+          </article>
+
+        </div>
+
+      </section>
+
+      <!-- REGRAS -->
+
+      <section id="rules" class="content-section">
+
+        <div class="section-heading">
+
+          <span class="section-kicker">
+            MANUAL DO JOGADOR
+          </span>
+
+          <h2>
+            As regras do
+            <span class="gradient-text">
+              ComplexMente
+            </span>
+          </h2>
+
+        </div>
+
+        <div class="rules-grid">
+
+          <div class="glass-card rule-card">
+            <span class="rule-number">01</span>
+            <h3>Forme sua equipe</h3>
+            <p>
+              Organize de duas a quatro equipes.
+              Cada grupo escolhe um nome e um
+              porta-voz para cada rodada.
+            </p>
+          </div>
+
+          <div class="glass-card rule-card">
+            <span class="rule-number">02</span>
+            <h3>Respeite o cronômetro</h3>
+            <p>
+              As equipes devem discutir e
+              selecionar sua resposta dentro
+              do tempo disponível.
+            </p>
+          </div>
+
+          <div class="glass-card rule-card">
+            <span class="rule-number">03</span>
+            <h3>Defenda seu raciocínio</h3>
+            <p>
+              O acerto é importante, mas
+              justificar as escolhas com
+              evidências é parte do desafio.
+            </p>
+          </div>
+
+          <div class="glass-card rule-card">
+            <span class="rule-number">04</span>
+            <h3>Utilize seus poderes</h3>
+            <p>
+              Cada equipe dispõe de poderes
+              especiais de uso limitado durante
+              as rodadas de perguntas.
+            </p>
+          </div>
+
+          <div class="glass-card rule-card">
+            <span class="rule-number">05</span>
+            <h3>Desafie outras equipes</h3>
+            <p>
+              Respostas incorretas podem abrir
+              oportunidades de contestação,
+              mediadas pelo professor.
+            </p>
+          </div>
+
+          <div class="glass-card rule-card">
+            <span class="rule-number">06</span>
+            <h3>Avalie as consequências</h3>
+            <p>
+              Nos dilemas CTSA, diferentes
+              escolhas afetam indicadores
+              simulados do futuro coletivo.
+            </p>
+          </div>
+
+          <div class="glass-card rule-card">
+            <span class="rule-number">07</span>
+            <h3>Enfrente o Conselho</h3>
+            <p>
+              Na fase final, cada equipe decide
+              quantos pontos deseja arriscar
+              antes de responder.
+            </p>
+          </div>
+
+          <div class="glass-card rule-card">
+            <span class="rule-number">08</span>
+            <h3>Vença com conhecimento</h3>
+            <p>
+              A equipe com maior pontuação
+              ao final é a vencedora.
+              Em caso de empate, a vitória
+              é compartilhada.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="callout">
+
+          <span class="callout-icon">💡</span>
+
+          <p>
+            <strong>Princípio fundamental:</strong>
+
+            Em problemas complexos, reconhecer
+            incertezas e explicitar critérios
+            pode ser tão importante quanto
+            encontrar uma resposta correta.
+          </p>
+
+        </div>
+
+      </section>
+
+      <!-- BASE ACADÊMICA -->
+
+      <section class="content-section">
+
+        <div class="section-heading">
+
+          <span class="section-kicker">
+            FUNDAMENTAÇÃO
+          </span>
+
+          <h2>
+            Ciência para além
+            <span class="gradient-text">
+              das respostas prontas.
+            </span>
+          </h2>
+
+        </div>
+
+        <div class="references-grid">
+
+          <div class="glass-card reference-card">
+
+            <span class="reference-label">
+              COMPLEXIDADE E CLIMA
+            </span>
+
+            <blockquote>
+              “recognise and embrace complexity
+              while addressing uncertainty”
+            </blockquote>
+
+            <p>
+              Trecho em inglês de Miani et al.
+              sobre a importância da complexidade
+              e da incerteza na educação científica.
+            </p>
+
+            <a
+              href="https://doi.org/10.1007/s11191-025-00658-9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MIANI ET AL. (2025) ↗
+            </a>
+
+          </div>
+
+          <div class="glass-card reference-card">
+
+            <span class="reference-label">
+              RISCO E CIDADANIA
+            </span>
+
+            <blockquote>
+              “scientific literacy for decision
+              making on contemporary socioscientific
+              issues is central”
+            </blockquote>
+
+            <p>
+              Trecho em inglês de Christensen
+              sobre alfabetização científica,
+              cidadania e tomada de decisões.
+            </p>
+
+            <a
+              href="https://doi.org/10.1080/03057260903142293"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CHRISTENSEN (2009) ↗
+            </a>
+
+          </div>
+
+        </div>
+
+        <p class="academic-note">
+          As situações de jogo são adaptações didáticas
+          dos conceitos discutidos nos artigos.
+          Os indicadores e resultados das decisões
+          são simulações pedagógicas, não previsões científicas.
+        </p>
+
+      </section>
+
+      <!-- CHAMADA FINAL DA LANDING -->
+
+      <section class="final-cta">
+
+        <span class="section-kicker">
+          A DECISÃO É SUA
+        </span>
+
+        <h2>
+          O futuro não está escrito.
+        </h2>
+
+        <p>
+          Reúna sua equipe. Questione certezas.
+          Construa conexões. Tome decisões.
+        </p>
+
+        <button
+          type="button"
+          class="btn btn-primary btn-large"
+          id="goSetupBottom"
+        >
+          COMEÇAR O JOGO →
+        </button>
+
+      </section>
+
+    </section>
+
+    <!-- ==================================
+         TELA 2: CONFIGURAÇÕES
+    =================================== -->
+
+    <section id="setup" class="view">
+
+      <div class="setup-container">
+
+        <button
+          type="button"
+          class="text-button"
+          id="backLanding"
+        >
+          ← VOLTAR
+        </button>
+
+        <div class="setup-heading">
+
+          <span class="section-kicker">
+            PREPARAÇÃO DA MISSÃO
+          </span>
+
+          <h1>
+            Configure sua
+            <span class="gradient-text">
+              experiência
+            </span>
+          </h1>
+
+          <p>
+            Defina as equipes e o tempo de
+            discussão das perguntas.
+          </p>
+
+        </div>
+
+        <div class="glass-card setup-card">
+
+          <div class="field">
+
+            <label for="teamCount">
+              NÚMERO DE EQUIPES
+            </label>
+
+            <select id="teamCount">
+
+              <option value="2" selected>
+                2 equipes
+              </option>
+
+              <option value="3">
+                3 equipes
+              </option>
+
+              <option value="4">
+                4 equipes
+              </option>
+
+            </select>
+
+          </div>
+
+          <div class="field">
+
+            <label for="timeChoice">
+              TEMPO POR PERGUNTA
+            </label>
+
+            <select id="timeChoice">
+
+              <option value="30">
+                30 segundos
+              </option>
+
+              <option value="45" selected>
+                45 segundos
+              </option>
+
+              <option value="60">
+                60 segundos
+              </option>
+
+            </select>
+
+          </div>
+
+          <div class="field">
+
+            <label>
+              NOMES DAS EQUIPES
+            </label>
+
+            <div id="teamFields"></div>
+
+          </div>
+
+          <div class="setup-information">
+
+            <strong>Formato da partida</strong>
+
+            <p>
+              Cada equipe enfrentará duas perguntas
+              na primeira fase, duas na segunda,
+              um dilema CTSA e um desafio final.
+            </p>
+
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-primary btn-block"
+            id="startGame"
+          >
+            INICIAR PARTIDA →
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==================================
+         TELA 3: JOGO
+    =================================== -->
+
+    <section id="game" class="view">
+
+      <div class="game-container">
+
+        <!-- PLACAR -->
+
+        <div class="scoreboard" id="scoreboard"></div>
+
+        <!-- INTRODUÇÃO DE CADA FASE -->
+
+        <div id="stageIntro" class="stage-intro">
+
+          <div class="stage-intro-card">
+
+            <span id="introNumber" class="intro-number">
+              FASE 01
+            </span>
+
+            <div id="introIcon" class="intro-icon">
+              ◈
+            </div>
+
+            <h1 id="introTitle"></h1>
+
+            <p id="introDescription"></p>
+
+            <button
+              type="button"
+              class="btn btn-primary btn-large"
+              id="startStage"
+            >
+              COMEÇAR FASE →
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- ÁREA DE JOGO -->
+
+        <div id="playArea" class="play-area hidden">
+
+          <div class="game-meta">
+
+            <div>
+
+              <span class="section-kicker" id="stageLabel">
+                FASE 01
+              </span>
+
+              <h2 id="roundLabel">
+                RODADA 01
+              </h2>
+
+            </div>
+
+            <div class="turn-panel">
+
+              <small>
+                VEZ DA EQUIPE
+              </small>
+
+              <strong id="activeTeam">
+                EQUIPE
+              </strong>
+
+            </div>
+
+          </div>
+
+          <!-- PROGRESSO DA FASE -->
+
+          <div class="round-progress">
+
+            <div class="round-progress-track">
+              <div id="roundProgressFill"></div>
+            </div>
+
+            <span id="roundProgressText"></span>
+
+          </div>
+
+          <!-- CARTA DE RISCO -->
+
+          <div id="riskNotice" class="risk-notice hidden">
+
+            <span class="risk-icon">
+              ⚠
+            </span>
+
+            <div>
+              <strong id="riskTitle"></strong>
+              <p id="riskDescription"></p>
+            </div>
+
+          </div>
+
+          <!-- INDICADORES CTSA -->
+
+          <div id="worldBoard" class="world-board hidden">
+
+            <div class="world-metric">
+
+              <span>🌍 CLIMA</span>
+
+              <strong id="metricClimate">
+                50
+              </strong>
+
+            </div>
+
+            <div class="world-metric">
+
+              <span>⚖️ JUSTIÇA</span>
+
+              <strong id="metricJustice">
+                50
+              </strong>
+
+            </div>
+
+            <div class="world-metric">
+
+              <span>🤝 CONFIANÇA</span>
+
+              <strong id="metricTrust">
+                50
+              </strong>
+
+            </div>
+
+          </div>
+
+          <!-- CARTA DE PERGUNTA -->
+
+          <article class="question-card">
+
+            <div class="question-top">
+
+              <div class="question-tags">
+
+                <span
+                  id="questionCategory"
+                  class="category-badge"
+                >
+                  COMPLEXIDADE
+                </span>
+
+                <span
+                  id="questionDifficulty"
+                  class="difficulty-badge"
+                >
+                  FÁCIL
+                </span>
+
+              </div>
+
+              <div class="timer-display">
+
+                <span class="timer-icon">
+                  ◷
+                </span>
+
+                <strong id="timerText">
+                  45
+                </strong>
+
+                <span>s</span>
+
+              </div>
+
+            </div>
+
+            <div class="timer-track">
+              <div id="timerFill"></div>
+            </div>
+
+            <div class="question-content">
+
+              <h2 id="questionText">
+                Aguardando pergunta...
+              </h2>
+
+              <p
+                id="questionContext"
+                class="question-context hidden"
+              ></p>
+
+            </div>
+
+            <!-- APOSTA DA FASE FINAL -->
+
+            <div id="wagerPanel" class="wager-panel hidden">
+
+              <label for="wagerChoice">
+                ♛ APOSTA PARA O CONSELHO DO FUTURO
+              </label>
+
+              <select id="wagerChoice">
+
+                <option value="0">
+                  Sem aposta
+                </option>
+
+                <option value="100">
+                  Apostar 100 pontos
+                </option>
+
+                <option value="200">
+                  Apostar 200 pontos
+                </option>
+
+              </select>
+
+              <p>
+                Acerto: +300 pontos e o valor apostado.
+                Erro: perde o valor apostado.
+              </p>
+
+            </div>
+
+            <!-- ALTERNATIVAS -->
+
+            <div id="answerOptions" class="answer-options">
+            </div>
+
+            <!-- PODERES -->
+
+            <div id="powersPanel" class="powers-panel">
+
+              <span class="powers-title">
+                PODERES DA EQUIPE
+              </span>
+
+              <div class="powers-grid">
+
+                <button
+                  type="button"
+                  class="power-button"
+                  id="powerDouble"
+                >
+                  <span>⚡</span>
+                  <strong>2× PONTOS</strong>
+                  <small>Uso único</small>
+                </button>
+
+                <button
+                  type="button"
+                  class="power-button"
+                  id="powerHint"
+                >
+                  <span>🔍</span>
+                  <strong>REDUZIR OPÇÕES</strong>
+                  <small>Uso único</small>
+                </button>
+
+                <button
+                  type="button"
+                  class="power-button"
+                  id="powerTime"
+                >
+                  <span>⏱</span>
+                  <strong>+20 SEGUNDOS</strong>
+                  <small>Uso único</small>
+                </button>
+
+              </div>
+
+            </div>
+
+            <div class="game-controls">
+
+              <button
+                type="button"
+                class="text-button"
+                id="pauseTimer"
+              >
+                ⏸ PAUSAR TEMPO
+              </button>
+
+            </div>
+
+            <!-- FEEDBACK -->
+
+            <div
+              id="answerFeedback"
+              class="answer-feedback hidden"
+              role="status"
+              aria-live="polite"
+            >
+            </div>
+
+            <!-- DESAFIO CRUZADO -->
+
+            <div id="challengePanel" class="challenge-panel hidden">
+
+              <h3>
+                ⚔️ DESAFIO CRUZADO
+              </h3>
+
+              <p>
+                A equipe não acertou.
+                Outra equipe pode apresentar
+                uma justificativa antes de revelar
+                a resposta correta.
+              </p>
+
+              <label for="challengeTeam">
+                EQUIPE DESAFIANTE
+              </label>
+
+              <select id="challengeTeam"></select>
+
+              <div class="challenge-actions">
+
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="awardChallenge"
+                >
+                  JUSTIFICATIVA VÁLIDA (+60)
+                </button>
+
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  id="skipChallenge"
+                >
+                  REVELAR RESPOSTA
+                </button>
+
+              </div>
+
+            </div>
+
+            <!-- AVALIAÇÃO PELO MEDIADOR -->
+
+            <div
+              id="moderatorBonus"
+              class="moderator-bonus hidden"
+            >
+
+              <p>
+                A equipe apresentou uma justificativa
+                consistente, fundamentada em evidências?
+              </p>
+
+              <button
+                type="button"
+                class="btn btn-secondary"
+                id="awardArgument"
+              >
+                +60 PONTOS POR ARGUMENTAÇÃO
+              </button>
+
+            </div>
+
+            <!-- AVANÇAR -->
+
+            <button
+              type="button"
+              class="btn btn-primary btn-block hidden"
+              id="nextTurn"
+            >
+              PRÓXIMA RODADA →
+            </button>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==================================
+         TELA 4: RESULTADOS
+    =================================== -->
+
+    <section id="results" class="view">
+
+      <div class="results-container">
+
+        <span class="section-kicker">
+          MISSÃO CONCLUÍDA
+        </span>
+
+        <div class="results-trophy">
+          🏆
+        </div>
+
+        <h1>
+          O FUTURO FOI
+          <span class="gradient-text">
+            DECIDIDO.
+          </span>
+        </h1>
+
+        <p id="winnerMessage" class="winner-message"></p>
+
+        <div class="glass-card results-board">
+
+          <h2>
+            CLASSIFICAÇÃO FINAL
+          </h2>
+
+          <div id="finalRanking"></div>
+
+        </div>
+
+        <div class="glass-card results-reflection">
+
+          <h3>
+            A discussão não termina aqui.
+          </h3>
+
+          <p>
+            Que incertezas permaneceram?
+            Quais interesses influenciaram as decisões?
+            Como as escolhas poderiam ser diferentes
+            em outros contextos sociais?
+          </p>
+
+          <p>
+            Na ciência e na sociedade,
+            compreender um problema é também
+            reconhecer suas conexões.
+          </p>
+
+        </div>
+
+        <button
+          type="button"
+          class="btn btn-primary btn-large"
+          id="restartGame"
+        >
+          JOGAR NOVAMENTE ↻
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+
+  <footer class="footer">
+
+    <span>
+      COMPLEXMENTE © 2026
+    </span>
+
+    <span>
+      Lucas Ferreira · PPGEduc/UnB
+    </span>
+
+    <span>
+      EDUCAÇÃO EM CIÊNCIAS · CTSA
+    </span>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+
+  <script src="perguntas.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
