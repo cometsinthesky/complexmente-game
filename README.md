@@ -552,24 +552,7 @@ avaliações de impacto ou análises de risco.
 
 ---
 
-## 17. Tecnologias e publicação
-
-O projeto utiliza arquivos estáticos.
-
-Pode ser publicado gratuitamente
-utilizando GitHub Pages.
-
-Repositório sugerido:
-
-https://github.com/cometsinthesky/complexmente-game
-
-Após adicionar os arquivos ao repositório,
-configure o GitHub Pages para utilizar
-a branch main e a pasta raiz.
-
----
-
-## 18. Créditos
+## 17. Créditos
 
 ComplexMente - Jogo de Decisões e Conexões CTSA.
 
