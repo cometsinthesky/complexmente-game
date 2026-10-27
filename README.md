@@ -2,7 +2,7 @@
 
 ## Jogo de Decisões e Conexões entre Ciência, Tecnologia, Sociedade e Ambiente (CTSA)
 
-## [Jogue o Wiki Physics Game agora!](https://cometsinthesky.github.io/complexmente-game/)  
+## [Jogue o ComplexMente Game agora!](https://cometsinthesky.github.io/complexmente-game/)  
 
 **ComplexMente** é um jogo educativo interativo desenvolvido
 em HTML5, CSS3 e JavaScript.
